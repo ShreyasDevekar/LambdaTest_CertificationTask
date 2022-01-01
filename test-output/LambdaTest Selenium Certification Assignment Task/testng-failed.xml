@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [LambdaTest Selenium Certification Assignment Task]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test Scenarios with Windows10 Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="version" value="latest"/>
+    <parameter name="resolution" value="1024x768"/>
+    <parameter name="platform" value="Windows 10"/>
+    <classes>
+      <class name="assignmentTask.LambdaTest_Scenarios">
+        <methods>
+          <include name="TestScenario_3"/>
+          <include name="afterMethod"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- assignmentTask.LambdaTest_Scenarios -->
+    </classes>
+  </test> <!-- Test Scenarios with Windows10 Chrome(failed) -->
+  <test thread-count="2" parallel="tests" name="Test Scenarios with macOS Catalina Safari(failed)">
+    <parameter name="browser" value="Safari"/>
+    <parameter name="version" value="12.0"/>
+    <parameter name="resolution" value="1280x960"/>
+    <parameter name="platform" value="MacOS Mojave"/>
+    <classes>
+      <class name="assignmentTask.LambdaTest_Scenarios">
+        <methods>
+          <include name="TestScenario_2"/>
+          <include name="TestScenario_1"/>
+          <include name="TestScenario_3"/>
+          <include name="afterMethod"/>
+          <include name="Setup"/>
+        </methods>
+      </class> <!-- assignmentTask.LambdaTest_Scenarios -->
+    </classes>
+  </test> <!-- Test Scenarios with macOS Catalina Safari(failed) -->
+</suite> <!-- Failed suite [LambdaTest Selenium Certification Assignment Task] -->

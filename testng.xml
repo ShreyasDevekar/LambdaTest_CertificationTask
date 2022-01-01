@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LambdaTest Selenium Certification Assignment Task" parallel="tests" thread-count="2">
+  <test name="Selenium_101 Assignment Scenarios"/>
+   <test name="Test Scenarios with Windows10 Chrome">
+       <parameter name="browser" value="Chrome"/>
+       <parameter name="version" value="latest"/>
+       <parameter name="platform" value="Windows 10"/>
+       <parameter name="resolution" value="1024x768"/>
+       <classes>
+           <class name="assignmentTask.LambdaTest_Scenarios"> </class>
+       </classes>
+   </test>
+   <test name="Test Scenarios with macOS Mojave Safari">
+       <parameter name="browser" value="Safari"/>
+       <parameter name="version" value="12.0"/>
+       <parameter name="platform" value="MacOS Mojave"/>
+       <parameter name="resolution" value="1280x960"/>
+       <classes>
+           <class name="assignmentTask.LambdaTest_Scenarios"> </class>
+       </classes>
+   </test>
+</suite> <!-- Suite -->
